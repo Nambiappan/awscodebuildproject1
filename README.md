@@ -24,3 +24,14 @@ Step 9: Get the build output artifact
 
 Step 10: Delete the S3 input bucket
 
+
+CLI Commands:
+
+aws codebuild create-project --generate-cli-skeleton
+
+aws codebuild create-project --cli-input-json file://create-project.json
+
+aws codebuild start-build --project-name project-name
+
+aws codebuild batch-get-builds --ids id
+
